@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="login">
+    <div class="login__content">
+        <span>Введите имя пользователя:</span>
+        <input type="text" placeholder="Введите имя">
+        <button onclick="Click()">Далее</button>
+    </div>
+</div>
+<div class="page">
+    <header>
+        <span id="NameUs"></span>
+        <button onclick="showControlPanel()">Панель инструментов</button>
+        <button onclick="Images()">Добавить изображение</button>
+    </header>
+    <div class="page__content">
+        <div class="page__content__control-panel">
+            <label for="opacitySlider">Прозрачность изображений:</label>
+            <input type="range" id="opacitySlider" name="opacitySlider" min="0" max="1" step="0.01" value="1" 
+                   oninput="updateOpacity(this.value)">
+            <button onclick="deleteLastImage()">Удалить последнее изображение</button>
+            <button onclick="restoreLastDeletedImage()">Вернуть последнее изображение</button>
+            <button onclick="mirrorImages()">Зеркалить изображения</button>
+            <button onclick="duplicateLastImage()">Продублировать изображение</button>
+        </div>        
+        <main>
+            <span></span>
+        </main>
+    </div>
+</div>
+</body>
+</html>

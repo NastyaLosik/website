@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(220, 193, 153);
+}
+.page__content {
+  align-items: flex-start;
+  width: 100%;
+}
+.page__content__control-panel {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(117, 113, 99);
+  display: none;
+  opacity: 0;
+  position: relative;
+  transition: opacity 0.5s ease, top 0.5s ease;
+}
+.page__content__control-panel.show button {
+  cursor: pointer;
+  background-color: rgb(214, 201, 182);
+  border: 1px solid black;
+  height: 33px;
+  width: 130px;
+  margin-top: 7px;
+  margin-left: 47px;
+}
+.page__content__control-panel.show button:hover {
+  background-color: white;
+}
+.page__content__control-panel.show button:active {
+  background-color: black;
+}
+.page__content__control-panel.show {
+  display: block;
+  opacity: 1;
+  top: 0;
+}
+.page__content main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+.page__content main img {
+  margin: 0 20px 20px 20px;
+  cursor: move;
+  width: 200px;
+  height: 200px;
+}
+.page__content main img:nth-child(even) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.page header {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(58, 51, 44);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.page header button {
+  cursor: pointer;
+  background-color: rgb(214, 201, 182);
+  border: 1px solid black;
+  height: 40px;
+  width: 150px;
+  margin-right: 20px;
+}
+.page header button:hover {
+  background-color: white;
+}
+.page header button:active {
+  background-color: black;
+}
+.page header div {
+  margin-left: 20px;
+}
+.page header div button {
+  margin-right: 0 !important;
+}
+.login {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(95, 93, 91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__content {
+  height: 50vh;
+  width: 50%;
+  background-color: rgb(244, 214, 189);
+  padding: 20px;
+}
+.login__content span {
+  font-size: 17px;
+  display: block;
+}
+.login__content input {
+  margin-top: 10px;
+  width: 70%;
+  height: 30px;
+  background-color: rgb(165, 157, 137);
+  border: none;
+  outline: none;
+  display: block;
+}
+.login__content button {
+  height: 30px;
+  width: 60px;
+  background-color: rgb(102, 81, 60);
+  margin-top: 10px;
+  background-origin: none;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles2.css.map */
